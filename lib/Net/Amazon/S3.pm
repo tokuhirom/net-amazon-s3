@@ -134,6 +134,7 @@ has 'aws_secret_access_key' => ( is => 'ro', isa => 'Str', required => 1 );
 has 'secure' => ( is => 'ro', isa => 'Bool', required => 0, default => 0 );
 has 'timeout' => ( is => 'ro', isa => 'Num',  required => 0, default => 30 );
 has 'retry'   => ( is => 'ro', isa => 'Bool', required => 0, default => 0 );
+has 'host'    => ( is => 'ro', isa => 'Str', required => 0, default => 's3.amazonaws.com' );
 
 has 'libxml' => ( is => 'rw', isa => 'XML::LibXML',    required => 0 );
 has 'ua'     => ( is => 'rw', isa => 'LWP::UserAgent', required => 0 );
